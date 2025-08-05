@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li class="brand">
+        <img src="logo11.png" alt="Spotify" /> Spotify
+      </li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="songlist">
+      <h1>Best of NCS - No Copyright Sounds</h1>
+
+      <!-- Songs will be dynamically filled by JS -->
+      <div class="songItemContainer">
+        <div class="songItem">
+          <img src="covers/cover1.jpg" alt="cover" />
+          <span class="songName">Song Name</span>
+          <span class="songlistplay">
+            <span class="timestamp">05:30 
+              <i id="0" class="fas songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="covers/cover1.jpg" alt="cover" />
+          <span class="songName">Song Name</span>
+          <span class="songlistplay">
+            <span class="timestamp">05:30 
+              <i id="1" class="fas songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="covers/cover1.jpg" alt="cover" />
+          <span class="songName">Song Name</span>
+          <span class="songlistplay">
+            <span class="timestamp">05:30 
+              <i id="2" class="fas songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="covers/cover1.jpg" alt="cover" />
+          <span class="songName">Song Name</span>
+          <span class="songlistplay">
+            <span class="timestamp">05:30 
+              <i id="3" class="fas songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="covers/cover1.jpg" alt="cover" />
+          <span class="songName">Song Name</span>
+          <span class="songlistplay">
+            <span class="timestamp">05:30 
+              <i id="4" class="fas songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="covers/cover1.jpg" alt="cover" />
+          <span class="songName">Song Name</span>
+          <span class="songlistplay">
+            <span class="timestamp">05:30 
+              <i id="5" class="fas songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+
+        <div class="songItem">
+          <img src="covers/cover1.jpg" alt="cover" />
+          <span class="songName">Song Name</span>
+          <span class="songlistplay">
+            <span class="timestamp">05:30 
+              <i id="6" class="fas songItemPlay fa-play-circle"></i>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="songBanner"></div>
+  </div>
+
+  <!-- Bottom Music Bar -->
+  <div class="bottom">
+    <input type="range" name="range" id="myprogressBar" min="0" value="0" max="100">
+    <div class="icons">
+      <!-- Font Awesome Icons -->
+      <i class="fas fa-3x fa-step-backward" id="previous"></i>
+      <i class="fas fa-3x fa-play-circle" id="masterplay"></i>
+      <i class="fas fa-3x fa-step-forward" id="next"></i>
+    </div>
+    <div class="songInfo">
+      <img src="gif.gif" width="42px" alt="playing gif" id="gif" style="opacity: 0;">
+      <span id="masterSongName">Let Me Love You</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

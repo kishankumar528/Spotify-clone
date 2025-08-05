@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+}
+
+nav ul li {
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-right: auto;
+}
+
+.brand img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 30px;
+    background-image: url("bg photo.webp"); /* ✅ Make sure this file exists and has the correct name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myprogressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 60px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    padding: 0 10px;
+}
+
+.songItem img {
+    width: 43px;
+    margin-right: 15px;
+    border-radius: 32px;
+}
+
+.songName {
+    flex: 1;
+    font-weight: bold;
+}
+
+.timestamp {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songlistplay {
+    display: flex;
+    align-items: center;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.songInfo img {
+    transition: opacity 0.4s ease-in;
+}
+
+/* ✅ Fixed typo: max-widh → max-width */
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 90%;
+    }
+
+    .songInfo {
+        left: 5vw;
+        font-size: 14px;
+    }
+
+    .brand img {
+        width: 80px;
+    }
+
+    .songItem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .timestamp {
+        margin-top: 5px;
+    }
+}
